@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animal Sound Exhibit</title>
+</head>
+<body>
+  <h1>Animal Sounds</h1>
+
+  <button onclick="playSound('lion.mp3')">Lion</button>
+  <button onclick="playSound('elephant.mp3')">Elephant</button>
+  <button onclick="playSound('cow.mp3')">Cow</button>
+  <button onclick="playSound('dog.mp3')">Dog</button>
+  <button onclick="playSound('bird.mp3')">Bird</button>
+
+  <audio id="player"></audio>
+
+  <script>
+    function playSound(file) {
+      let player = document.getElementById("player");
+      player.src = file;
+      player.play();
+    }
+  </script>
+</body>
+</html>
